@@ -118,7 +118,7 @@ public class GameManager : MonoBehaviour
             PlayerStats.money += 1;
             moneyText.text = PlayerStats.money.ToString() + " Coins";
         }
-        if(enemy.health<=0)
+        if(enemy.health<=0 && enemyIsAlive)
         {
             enemyIsAlive = false;
             if(enemyIdx < enemies.Length-1)
