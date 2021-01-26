@@ -58,6 +58,7 @@ public class Shop : MonoBehaviour
             damageText.text = "Sold Out";
             damageButton.interactable = false;
             damageAvailable = false;
+            CheckHealthButton();
         }
         
     }
@@ -77,6 +78,7 @@ public class Shop : MonoBehaviour
             healthText.text = "Sold Out";
             healthButton.interactable = false;
             healthAvailable = false;
+            CheckDamageButton();
         }
         
     }
