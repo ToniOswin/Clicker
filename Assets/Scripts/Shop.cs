@@ -22,11 +22,10 @@ public class Shop : MonoBehaviour
     [SerializeField]
     TextMeshProUGUI healthText;
 
-    static int damageIdx = 0;
-    static int healthIdx = 0;
-
-    static bool damageAvailable = true;
-    static bool healthAvailable = true;
+    public static int damageIdx = 0;
+    public static int healthIdx = 0;
+    public static bool damageAvailable = true;
+    public static bool healthAvailable = true;
 
     [SerializeField]
     TextMeshProUGUI moneyText;

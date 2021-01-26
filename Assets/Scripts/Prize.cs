@@ -11,6 +11,18 @@ public class Prize : MonoBehaviour
     }
     public void BackToMenu()
     {
+        
+        PlayerStats.money = 0;
+        PlayerStats.Damage = 1;
+        PlayerStats.health = 10;
+
+        GameManager.enemyIdx = 0;
+
+        Shop.damageIdx = 0;
+        Shop.healthIdx = 0;
+        Shop.damageAvailable = true;
+        Shop.healthAvailable = true;
+
         SceneManager.LoadScene("Menu");
     }
 }
